@@ -12,14 +12,10 @@
   @endif
 </div>
 
-<form action="{{ route('movies.store') }}" method="post">
-@csrf
-@method('POST')
-
 <div class="">
   <form action="{{ route ('movies.store')}}" method="post">
     @csrf
-    @method('PUT')
+    @method('POST')
 
     <div class="">
       <label>Titolo</label>
