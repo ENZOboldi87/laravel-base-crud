@@ -26,8 +26,8 @@ class MovieController extends Controller
      */
     public function create()
     {
-        //
-    }
+        return view ('movies.create');
+          }
 
     /**
      * Store a newly created resource in storage.

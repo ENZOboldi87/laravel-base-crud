@@ -10,3 +10,8 @@
   @endforeach
 
 </ul>
+
+<div class="">
+  <a href="{{route ('movies.create')}}">Aggiungi nuovo film</a>
+
+</div>
