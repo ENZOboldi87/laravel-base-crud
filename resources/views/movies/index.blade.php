@@ -9,8 +9,19 @@
 <ul class="list-unstyled">
   @foreach ($movies as $movie)
     <li>{{$movie->title}}
-      <button type="button" class="btn btn-primary">Primary</button><a href="{{route ('movies.show', $movie) }}">Dettagli</a>
-      <a href="{{route ('movies.edit', $movie) }}">Modifica</a>
+      <a href="{{route ('movies.show', $movie) }}"><button type="button" class="btn btn-primary">Dettagli</button></a>
+      <a href="{{route ('movies.edit', $movie) }}"><button type="button" class="btn btn-warning">Modifica</button></a>
+        <form action="{{ route('movies.destroy', $movie) }}" method="post">
+  					@csrf
+  					@method('DELETE')
+
+  					<button type="submit" class="btn btn-danger">Elimina</button>
+  				</form>
+
+      {{-- <button type="submit" class="btn btn-info">
+        <span class="glyphicon glyphicon-trash"></span> Delete --}}
+
+
      </li>
   @endforeach
 

@@ -99,7 +99,7 @@ class MovieController extends Controller
     {
         $movie->delete();
 
-        return redirect()->route('shoes.index');
+        return redirect()->route('movies.index');
     }
 
     protected function regoleDiValidazione() {
