@@ -1,3 +1,8 @@
+@extends('layouts.layouts')
+@section('title')
+  BoldiFlix - Qui trovi solo il trash del trash
+@endsection
+@section('content')
 <h1>In questa pagina modifico il film che ho selezionato</h1>
 
 <p>Il film che hai scelto di modificare e: {{$movie->title}}</p>
@@ -49,3 +54,4 @@
 
 
 <a href="{{route ('movies.index')}}">torna indietro</a>
+@endsection

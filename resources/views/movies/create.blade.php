@@ -1,3 +1,8 @@
+@extends('layouts.layouts')
+@section('title')
+  BoldiFlix - Aggiunti il tuo film al database
+@endsection
+@section('content')
 <h3>questa e la pagina dove si crea il film </h3>
 
 <div>
@@ -44,3 +49,4 @@
 </div>
 
 <a href="{{route ('movies.index')}}">torna indietro</a>
+@endsection
